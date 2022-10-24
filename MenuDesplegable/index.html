@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<title>Menu de navegacion estilo Amazon</title>
+</head>
+<body>
+	<nav class="menu" id="menu">
+		<div class="contenedor contenedor-botones-menu">
+			<button id="btn-menu-barras" class="btn-menu-barras"><i class="fa-solid fa-bars"></i></button>
+			<button id="btn-menu-barras" class="btn-menu-cerrar"><i class="fa-light fa-circle-xmark"></i></button>
+		</div>
+
+		<div class="contenedor contenedor-enlace-nav">
+			<div class="btn-departamentos" id="btn-departamentos">
+				<p>Todos los <span>Departamentos</span></p>
+				<i class="fa-solid fa-caret-down"></i>				
+			</div>
+
+			<div class="enlaces">
+				<a href="#">Cuenta</a>
+				<a href="#">Promociones</a>
+				<a href="#">Mesa de Regalos</a>
+				<a href="#">Ayuda</a>
+			</div>	
+		</div>
+
+		<div class="contenedor contenedor-grid">
+			<div class="grid" id="grid">
+				<div class="categorias">
+					<button class="btn-regresar"><i class="fa-solid fa-arrow-left"></i>Regresar</button>
+					<h3 class="subtitulo">Categorias</h3>
+
+					<a href="#" data-categoria="tecnologia-y-computadoras">Tecnologia y Computadoras<i class="fa-solid fa-angle-right"></i></a>   <!--Estamos creado el atributo personalizado, para saber cuando el usuario pase el cursor, podemos obtener ese atributo-->
+					<a href="#" data-categoria="libros">Libros<i class="fa-solid fa-angle-right"></i></a>
+					<a href="#" data-categoria="ropa-y-accesorios">Ropa y Accesorios<i class="fa-solid fa-angle-right"></i></a>
+					<a href="#" data-categoria="hogar-y-cocina">Hogar y Cocina<i class="fa-solid fa-angle-right"></i></a>
+					<a href="#" data-categoria="juego-y-juguetes">Juegos y Juguetes<i class="fa-solid fa-angle-right"></i></a>
+					<a href="#" data-categoria="salud-y-belleza">Salud y Belleza<i class="fa-solid fa-angle-right"></i></a>
+					<a href="#" data-categoria="alimentos-y-bebidas">Alimentos y Bebidas<i class="fa-solid fa-angle-right"></i></a>
+				</div>
+
+				<div class="contenedor-subcategorias">
+					<div class="subcategoria" data-categoria="tecnologia-y-computadoras">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fa-solid fa-arrow-left"></i></button>
+							<h3 class="subtitulo">Tecnologia y Computadoras</h3>
+							<a href="#">Laptops</a>
+							<a href="#">Tablets</a>
+							<a href="#">Computadoras de escritorio</a>
+							<a href="#">Monitores</a>
+							<a href="#">Componentes</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="img/banner-tecnologia.jpeg">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="img/huawei.jpg">								
+							</a>
+							<a href="#">
+								<img src="img/samsung.jpg">								
+							</a>
+							<a href="#">
+								<img src="img/lenovo.jpg">								
+							</a>
+							<a href="#">
+								<img src="img/LG.jpg">								
+							</a>
+						</div>						
+					</div>
+
+					<div class="subcategoria" data-categoria="libros">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fa-solid fa-arrow-left"></i></button>
+							<h3 class="subtitulo">Libros</h3>
+							<a href="#">Libro1</a>
+							<a href="#">Libro2</a>
+							<a href="#">Libro3</a>
+							<a href="#">Libro4</a>
+							<a href="#">Libro5</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="img/libro.jpg">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="img/libro1.jpg">								
+							</a>
+							<a href="#">
+								<img src="img/libro2.jpg">								
+							</a>
+							<a href="#">
+								<img src="img/libro3.jpg">								
+							</a>
+							<a href="#">
+								<img src="img/libro4.jpg">								
+							</a>
+						</div>						
+					</div>
+
+
+				</div>		
+			</div>
+		</div>		
+	</nav>
+
+	<main class="contenedor">
+		<article></article>
+	</main>
+	<script src="https://kit.fontawesome.com/3d4528ccfb.js" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>
